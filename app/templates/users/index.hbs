@@ -1,0 +1,22 @@
+{{page-title 'User'}}
+<div class="container">
+  {{!-- TODO here should create filter component because new filter will come sure --}}
+  <div class="colum is-full">
+    <label class="checkbox" {{on 'click' this.changeShowArchived }}>
+      <input type="checkbox"  />
+     Show Archived 
+    </label>
+  </div>
+  <div class="columns is-centered">
+    {{#each this.filteredItem as |user|}}
+    <div class="column">
+      <LinkTo @route="users.user" @model={{user}}>
+        <div class="user-select is-220px">
+          <img class="is-pulled-left" src={{user.image}} width="60px" alt="profile-image" />
+          <p>{{user.name}}</p>
+        </div>
+      </LinkTo>
+    </div>
+    {{/each}}
+  </div>
+</div>
