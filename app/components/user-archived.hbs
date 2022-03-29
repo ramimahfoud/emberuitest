@@ -1,0 +1,7 @@
+
+ <p data-test-id="is-archived"> 
+{{#if @user.archived}}This user is Archived{{/if}}
+ </p>
+<button data-test-id="archive-btn" class="button is-info is-light" type="button" {{on "click" this.changeStatus}}>
+  {{#if @user.archived}}UnAarchived{{else }}Archived{{/if}}
+</button>

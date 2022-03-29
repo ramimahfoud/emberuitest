@@ -1,21 +1,24 @@
 ## Prerequisites
 
+You need Node.js  version 14x to run the code.
+
+
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
+* [Node.js](https://nodejs.org/)  version 14x to run the code to run the code properly ( Node 16+ not support ) (with npm)  
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
 ## Installation
 
 * `git clone https://github.com/lekkercode-com/ember-ui`
-* `cd user-archiving`
+* `cd ember-ui`
 * `npm install`
 
 ## Running / Development
 
-* Run `ember serve` in the user-archiving folder.
+* Run `ember serve` in the ember-ui folder.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
